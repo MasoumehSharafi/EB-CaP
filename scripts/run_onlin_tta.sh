@@ -16,7 +16,7 @@ python online_tta_ebm.py \
   --shuffle-within-subject \
   --stream-seed 42 \
   --batch-size 16 \
-  --clip-len 8 \
+  --clip-len 16 \
   --frame-stride 1 \
   --sgld-steps 20 \
   --sgld-step-size 0.01 \
