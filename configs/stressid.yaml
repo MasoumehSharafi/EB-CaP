@@ -1,0 +1,28 @@
+dataset:
+  dataset_dir: StressID
+  class_names: [neutral, stress]
+  class_folders: [neutral, stress]
+  train_split: train
+  val_split: validation
+  target_subject_regex: '^\d+$'
+  exclude_target_dirs: [train, validation, val, test]
+  prompt_templates:
+    - 'a person with an expression of {}.'
+    - 'a face showing {}.'
+
+tta:
+  energy:
+    # tau_positive and tau_negative are read from source_best.pt by default.
+    temperature: 1.0
+  cache:
+    positive_capacity: 5
+    negative_capacity: 4
+    topk: 3
+    beta: 10.0
+  fusion:
+    classifier_prob_weight: 0.5
+    classifier_prototype_weight: 0.5
+    adapted_prob_weight: 0.5
+    prototype_scale: 20.0
+    lambda_positive: 1.0
+    lambda_negative: 1.0
