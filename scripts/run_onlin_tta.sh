@@ -6,7 +6,7 @@ export CUDA_VISIBLE_DEVICES=2
 RESULT_DIR="./results/biovid_ebcap_methodology_bs16"
 mkdir -p "${RESULT_DIR}"
 
-python run_online_tta_ebcap_methodology.py \
+python online_tta_ebm.py \
   --config ./configs \
   --dataset biovid \
   --target-root /projets/AT46120/BioVid_Video \
