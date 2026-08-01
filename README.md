@@ -10,13 +10,6 @@ Facial expression recognition (FER) in videos remains challenging because models
 Experiments on 3 challenging video datasets for video FER - BioVid, StressID, and BAH- indicate that EB-CaP can outperform state-of-the-art TTA methods, while maintaining low computational and memory overhead.
 ## Installation
 
-Clone the repository:
-
-```bash
-git clone https://github.com/MasoumehSharafi/EB-CaP.git
-cd EB-CaP
-```
-
 Install dependencies:
 
 ```bash
