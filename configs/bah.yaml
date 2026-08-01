@@ -1,5 +1,5 @@
 dataset:
-  dataset_dir: StressID
+  dataset_dir: BAH
   class_names: [neutral, positive]
   class_folders: [neutral, positive]
   train_split: train
