@@ -8,7 +8,6 @@ dataset:
   exclude_target_dirs: [train, validation, val, test]
   prompt_templates:
     - 'a person with an expression of {}.'
-    - 'a face showing {}.'
 
 tta:
   energy:
